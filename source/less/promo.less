@@ -1,0 +1,57 @@
+.promo {
+  position: relative;
+  padding: 27px 20px 0;
+  /*background-color: rgba(104, 183, 56, 0.85);*/
+  background-image: url("../img/promo-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 320px 302px;
+  background-position: top center;
+}
+
+.promo::after {
+  position: absolute;
+  content: "";
+  width: 320px;
+  height: 302px;
+  top: 0;
+  right: 0;
+  background-color: rgba(104, 183, 56, 0.85);
+
+}
+
+.promo__title {
+  position: relative;
+  font-family: "Oswald";
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 25px;
+  z-index: 2;
+
+}
+
+.promo__description {
+  position: relative;
+  font-family: inherit;
+  font-size: 14px;
+  font-style: normal;
+  line-height: 14px;
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 29px;
+  z-index: 2;
+}
+
+.promo__image {
+  display: block;
+  position: relative;
+  z-index: 2;
+}
