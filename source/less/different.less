@@ -1,0 +1,44 @@
+.different__gift {
+  position: relative;
+  width: 280px;
+  height: 290px;
+  background-color: rgba(104, 183, 56, 0.85);
+  background-image: url("../img/gift.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top center;
+}
+
+.different__gift::after {
+  position: absolute;
+  content: "";
+  width: 280px;
+  height: 290px;
+  top: 0;
+  right: 0;
+  background-color: rgba(104, 183, 56, 0.85);
+}
+
+.different__link {
+  display: flex;
+  width: 161px;
+  height: 60px;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0;
+  padding-top: 186px;
+  margin: 0 auto 43px auto;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 2;
+  background-image: url("../img/gift-box.svg");
+  background-repeat: no-repeat;
+  background-size: 78px 80px;
+  background-position: center;
+}
