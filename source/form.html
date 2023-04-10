@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Кэт энерджи</title>
     <link href="css/style.css" rel="stylesheet">
 </head>
@@ -23,10 +24,10 @@
                         <a class="site-list__link" href="index.html">Главная</a>
                     </li>
                     <li class="site-list__item">
-                        <a class="site-list__link" href="">Каталог продукции</a>
+                        <a class="site-list__link" href="catalog.html">Каталог продукции</a>
                     </li>
                     <li class="site-list__item site-list__item--current">
-                        <a class="site-list__link" href="form.html">Подбор программы</a>
+                        <a class="site-list__link" href="">Подбор программы</a>
                     </li>
                 </ul>
             </div>
@@ -41,14 +42,20 @@
             <form class="questions__form form" action="https://echo.htmlacademy.ru" method="get">
                 <fieldset class="form__group">
                     <legend class="visually-hidden">Всё о коте</legend>
+                    <div class="form__wrapper">
                     <label class="form__name" for="name">ИМЯ:<sup>*</sup></label>
                     <input class="form__field" type="text" id="name" placeholder="Как зовут кота?" value="Барсик"
                         required>
+                        </div>
+                        <div class="form__wrapper">
                     <label class="form__name" for="weight">Вес (кг):<sup>*</sup></label>
                     <input class="form__field" type="number" id="weight" placeholder="Какой вес кота?" value="7"
                         required>
+                        </div>
+                        <div class="form__wrapper">
                     <label class="form__name" for="age">Возраст (лет):</label>
                     <input class="form__field" type="number" id="age" placeholder="Какой возраст?" value="7">
+                    </div>
                 </fieldset>
                 <fieldset class="form__group">
                     <legend class="visually-hidden">Выберите программу</legend>
@@ -86,7 +93,7 @@
                 </fieldset>
                 <fieldset class="form__group">
                     <legend class="form__title">Дополнительно</legend>
-                    <ul class="form__list">
+                    <ul class="form__list-different">
                         <li class="form__item">
                           <input class="form__input" type="checkbox" id="sweetener" name="sweetener" checked>
                           <label class="form__name" for="sweetener">Cахарозаменитель</label>
@@ -104,8 +111,10 @@
                           <label class="form__name" for="vitamins">Витамины</label>
                         </li>
                     </ul>
+                    <div class="form__button-wrapper">
                     <button class="form__button button" type="submit">Отправить заявку</button>
                     <small class="form__text-small"><sup>*</sup> — Обязательные поля</small>
+                    </div>
                 </fieldset>
             </form>
         </section>
