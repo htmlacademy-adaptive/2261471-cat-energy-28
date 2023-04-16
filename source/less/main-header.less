@@ -1,10 +1,15 @@
 .main-header {
+  min-height: 65px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: @tablet-width) {
     flex-direction: row;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   @media (min-width: @desktop-width) {
@@ -17,13 +22,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 38px;
+  width: calc(100% - 64px);
+  margin-left: 20px;
+  height: 65px;
 
   @media (min-width: @tablet-width) {
     height: 52px;
+    width: 174px;
+    margin: 0;
   }
 
   @media (min-width: @desktop-width) {
     height: 59px;
+    width: 202px;
   }
+}
+
+.main-header__logo-text {
+  margin: 0 auto;
 }
