@@ -1,5 +1,9 @@
 .main-nav {
   position: relative;
+
+  @media (min-width: @desktop-width) {
+    min-height: 40px;
+  }
 }
 
 .main-nav__toggle {
@@ -66,6 +70,17 @@
   }
 }
 
+.main-nav__wrapper {
+  @media (min-width: @tablet-width) {
+    margin-right: -18px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-right: -16px;
+    max-width: 590px;
+  }
+}
+
 .main-nav--opened .main-nav__wrapper {
   position: absolute;
   display: block;
@@ -91,8 +106,4 @@
 .main-nav__list {
   display: flex;
   flex-wrap: wrap;
-
-  @media (min-width: @desktop-width) {
-    margin-right: 110px;
-  }
 }

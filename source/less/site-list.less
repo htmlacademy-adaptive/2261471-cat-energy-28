@@ -27,15 +27,11 @@
 
   @media (min-width: @tablet-width) {
     border: none;
-    padding: 15px;
+    min-height: 40px;
 
     &:first-of-type {
       border: none;
     }
-  }
-
-  @media (min-width: @desktop-width) {
-    padding: 33px;
   }
 }
 
@@ -56,16 +52,46 @@
   @media (min-width: @tablet-width) {
     font-size: 18px;
     line-height: 24px;
+    margin-top: 18px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: 10px;
   }
 
   @media (min-width: @desktop-width) {
     font-size: 20px;
     line-height: 29px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    padding-right: 16px;
+
+    &--index {
+      color: #ffffff;
+    }
   }
 }
 
-.site-list__link--desktop {
+.site-list__link--current::after {
+  @media (min-width: @tablet-width) {
+    position: absolute;
+    content: "";
+    height: 2px;
+    background-color: @generalcolor;
+    left: 18px;
+    right: 18px;
+    bottom: 0;
+    z-index: 2;
+  }
+
   @media (min-width: @desktop-width) {
-    color: #ffffff;
+    left: 16px;
+    right: 16px;
   }
 }
+
+.site-list__link--index.site-list__link--current::after {
+  @media (min-width: @desktop-width) {
+    background-color: #ffffff;
+  }
+}
+
