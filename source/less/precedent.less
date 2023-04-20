@@ -1,41 +1,106 @@
 .precedent {
-    background-color: rgba(234, 234, 234, 1);
-    padding: 25px 20px 40px;
+  position: relative;
+  background-color: rgba(234, 234, 234, 1);
+  padding: 25px 20px 40px;
+
+  @media (min-width: @tablet-width) {
+    background-color: #ffffff;
+    padding: 43px 30px 0 31px;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 462px;
+      background-color: #eaeaea;
+      top: 619px;
+      left: 0;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    padding: 70px 110px 75px 110px;
+    background-color: #ffffff;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 462px;
+      background-color: #f2f2f2;
+      top: 205px;
+      left: 0;
+    }
+  }
+}
+
+.precedent__wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 80px;
+  }
 }
 
 .precedent__title {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 40px;
-    color: #000000;
-    margin-bottom: 40px;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 40px;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 40px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 63px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 146px;
+  }
 }
 
 .precedent__description {
-    font-family: "Lato", sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 18px;
-    color: #444444;
-    margin-bottom: 20px;
+  font-family: "Lato", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  margin-bottom: 20px;
+  z-index: 2;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 54px;
+  }
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1 / 2;
+    width: 436px;
+    margin-bottom: 69px;
+  }
 }
 
 .precedent__expense {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 34px;
+  z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
-.precedent__cost {
-    font-family: Oswald;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    margin: 0;
-    margin-bottom: 20px;
-    padding: 0;
+.precedent__image {
+  z-index: 2;
+
+  @media (min-width: @desktop-width) {
+    grid-column: 2 / -1;
+    grid-row: 1 / 4;
+  }
 }
+

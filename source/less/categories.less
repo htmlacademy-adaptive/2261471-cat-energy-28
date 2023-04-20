@@ -15,7 +15,7 @@
 
   @media (min-width: @desktop-width) {
     display: grid;
-    grid-template-columns: 570px 570px;
+    grid-template-columns: 1fr 1fr;
     column-gap: 80px;
   }
 }
@@ -32,7 +32,7 @@
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 708px;
+    width: 100%;
     padding-top: 77px;
     padding-left: 52px;
     padding-bottom: 57px;
@@ -40,7 +40,7 @@
   }
 
   @media (min-width: @desktop-width) {
-    width: 570px;
+    min-width: 570px;
     padding-left: 52px;
     padding-bottom: 59px;
   }

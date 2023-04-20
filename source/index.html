@@ -9,24 +9,22 @@
 
 <body class="page__body">
   <header class="main-header">
-    <div class="logo-wrapper">
       <a class="main-header__logo logo" href="*">
         <img class="main-header__logo-image" src="img/logo-image-mobile.svg" width="34" height="38"
           alt="Кэт энерджи.">
         <img class="main-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
       </a>
-    </div>
-    <nav class="main-nav">
+    <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--current">
-            <a class="site-list__link site-list__link--index" href="">Главная</a>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current site-list__link--index">Главная</a>
           </li>
           <li class="site-list__item">
             <a class="site-list__link site-list__link--index" href="catalog.html">Каталог продукции</a>
           </li>
-          <li class="site-list__item ">
+          <li class="site-list__item">
             <a class="site-list__link site-list__link--index" href="form.html">Подбор программы</a>
           </li>
         </ul>
@@ -64,22 +62,26 @@
       <div class="scheme__wrapper">
         <h2 class="scheme__title">Как это работает</h2>
         <ul class="scheme__list">
-          <li class="scheme__item scheme__item--nature">
+          <li class="scheme__item">
+            <span class="scheme__img scheme__img--nature"></span>
             <p class="scheme__description">Функциональное питание
               содержит только полезные
               питательные вещества.</p>
           </li>
-          <li class="scheme__item scheme__item--comfort">
+          <li class="scheme__item">
+            <span class="scheme__img scheme__img--comfort"></span>
             <p class="scheme__description">Выпускается в виде порошка,
               который нужно лишь залить
               кипятком и готово.</p>
           </li>
-          <li class="scheme__item scheme__item--meal">
+          <li class="scheme__item">
+            <span class="scheme__img scheme__img--meal"></span>
             <p class="scheme__description">Замените один-два приема
               обычной еды на наше
               функциональное питание.</p>
           </li>
-          <li class="scheme__item scheme__item--time">
+          <li class="scheme__item">
+            <span class="scheme__img scheme__img--time"></span>
             <p class="scheme__description">Уже через месяц наслаждайтесь
               изменениями к лучшему вашего питомца!</p>
           </li>
@@ -92,17 +94,22 @@
         <p class="precedent__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy
           Slim. Отличный результат без изнуряющих тренировок!
           При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-        <div class="precedent__expense">
-          <div class="expense">
-          <b class="expense__price">5 КГ</b>
-          <small class="expense__description">снижение<br>веса</small>
+        <div class="precedent__expense expense">
+        <div class="expense__wrapper">
+          <div class="expense__container">
+          <strong class="expense__price">5 КГ</strong>
+          <small class="expense__description">снижение <br>веса</small>
           </div>
-        <div class="expense">
-          <b class="expense__price">60 ДНЕЙ</b>
+        <div class="expense__container">
+          <strong class="expense__price">60 ДНЕЙ</strong>
           <small class="expense__description">затрачено времени</small>
         </div>
         </div>
-        <p class="precedent__cost">Затраты на питание: 15 000 РУБ.</p>
+        <div class="expense__cost-wrapper">
+        <p class="expense__cost">Затраты на питание: </p>
+        <p class="expense__money">15 000 РУБ.</p>
+        </div>
+      </div>
         <div class="precedent__image slider">
           <img class="slider__image" src="img/cat-before-mobile.jpg" width="280" height="256" alt="Фото До">
           <img class="slider__image" src="img/cat-after-mobile.jpg" width="280" height="256" alt="Фото После">
@@ -110,18 +117,19 @@
             <span class="visually-hidden">Посмотреть до и после</span>
           </button>
         </div>
-      </div>
     </section>
   </main>
   <footer class="main-footer">
     <div class="main-footer__wrapper">
       <div class="main-footer__contacts contacts">
-        <b class="contacts__title">Приглашаем к сотрудничеству дилеров!</b>
+        <strong class="contacts__title">Приглашаем к&nbsp;сотрудничеству дилеров!</strong>
+        <div class="contacts__text-wrapper">
         <p class="contacts__text">ул. Большая
-          Конюшенная,&nbspд.&nbsp19/8<br>
-          Санкт-Петербург</p>
+          Конюшенная,&nbspд.&nbsp19/8<p>
+        <p class="contacts__text">Санкт-Петербург</p>
         </div>
-        <img class="main-footer__map" src="img/map-mobile.jpg" alt="Карта Петербурга">
+        </div>
+        <iframe class="contacts__map" src="https://yandex.ru/map-widget/v1/?ll=30.317015%2C59.967569&mode=search&oid=24933578998&ol=biz&z=15.22" width="100%" height="400" frameborder="0" allowfullscreen="" style="position: relative;" title="Офис компании по адресу в картах"></iframe>
       </div>
     <div class="main-footer__bottom bottom">
       <a class="bottom__logo logo" href="*">

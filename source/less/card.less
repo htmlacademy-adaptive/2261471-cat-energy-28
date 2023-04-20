@@ -1,8 +1,14 @@
 .card {
-  margin-bottom: 19px;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 19px;
+  padding-bottom: 25px;
   box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
+    display: flex;
+    flex-direction: column;
     height: 430px;
     background-color: #f2f2f2;
     padding: 161px 37px 39px 37px;
@@ -10,14 +16,51 @@
 }
 
 .card__list {
+  grid-column: 2 / 3;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 140px;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 16px;
   text-align: center;
+  margin: 0;
+  margin-bottom: 22px;
+
+  @media (min-width: @tablet-width) {
+    width: 100%;
+    margin-bottom: auto;
+  }
+}
+
+.card__term {
+  text-align: left;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.card__detail {
+  text-align: right;
+  margin: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+    padding-bottom: 9px;
+    padding-top: 7px;
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .card__title {
+  grid-column: 2 / 3;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   font-weight: 400;
@@ -25,4 +68,18 @@
   text-align: left;
   color: #222222;
   text-transform: uppercase;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+    width: 170px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 21px;
+  }
+}
+
+.card__order {
+  grid-column: 1 / -1;
 }

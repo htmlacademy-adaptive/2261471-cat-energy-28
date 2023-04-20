@@ -1,6 +1,34 @@
 .expense {
-    position: relative;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 104px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.expense__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 34px;
+
+  @media (min-width: @tablet-width) {
+    width: 366px;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 60px;
+  }
 }
 
 .expense__price {
@@ -17,6 +45,18 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+
+  @media (min-width: @tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    min-height: 72px;
+  }
+}
+
+.expense__container {
+  position: relative;
+  display: flex;
 }
 
 .expense__description {
@@ -25,6 +65,8 @@
   left: 18px;
   width: 87px;
   height: 24px;
+  margin-right: auto;
+  margin-left: auto;
   font-family: "Lato", sans-serif;
   font-size: 12px;
   font-weight: 400;
@@ -33,4 +75,77 @@
   color: #444444;
   background-color: #eaeaea;
 
+  @media (min-width: @tablet-width) {
+    width: 142px;
+    top: 64px;
+    left: 10px;
+    background-color: #ffffff;
+
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: @desktop-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.expense__cost-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    flex-direction: column;
+    margin: 0;
+  }
+
+  @media (min-width: @desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.expense__cost {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    width: 174px;
+    text-align: end;
+    margin: 0;
+    margin-bottom: 9px;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: flex;
+    margin: 0;
+    margin-right: 63px;
+  }
+}
+
+.expense__money {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+
+  @media (min-width: @tablet-width) {
+    font-size: 20px;
+    text-align: end;
+    margin: 0;
+  }
 }
