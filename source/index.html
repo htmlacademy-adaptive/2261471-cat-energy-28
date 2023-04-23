@@ -10,9 +10,13 @@
 <body class="page__body">
   <header class="main-header">
       <a class="main-header__logo logo" href="*">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
         <img class="main-header__logo-image" src="img/logo-image-mobile.svg" width="34" height="38"
           alt="Кэт энерджи.">
-        <img class="main-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy.">
+        <!-- <img class="main-header__logo-text" src="img/logo-text.svg" width="101" height="18" alt="Cat energy."> -->
+      </picture>
       </a>
     <nav class="main-nav main-nav--nojs">
       <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
