@@ -13,3 +13,24 @@ navToggle.addEventListener('click', function () {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+  ymaps.ready(init);
+  function init() {
+    var myMap = new ymaps.Map("map", {
+      center: [59.968425, 30.315028],
+      zoom: 17,
+      controls: ["zoomControl"]
+    });
+
+    var myPlacemark = new ymaps.Placemark([59.968510, 30.317776], {
+      hintContent: 'HTML-Academy',
+      balloonContent: 'тут Ваш адрес'
+    }, {
+      iconLayout: 'default#image',
+      iconImageHref: '../img/map-pin.svg',
+      iconImageSize: [50, 50],
+      iconImageOffset: [-25, -45]
+    });
+    myMap.behaviors.disable('scrollZoom');
+    myMap.geoObjects.add(myPlacemark);
+  }
