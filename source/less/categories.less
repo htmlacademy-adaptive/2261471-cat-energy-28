@@ -96,14 +96,16 @@
     &--loss::before {
       width: 100px;
       height: 106px;
+      top: 41px;
       left: 52px;
-      right: 62px;
+      right: initial;
       background-image: url("../img/cat-back-loss-desktop.svg");
     }
 
     &--gain::before {
       left: 33px;
       top: 47px;
+      right: initial;
       width: 134px;
       height: 100px;
       background-image: url("../img/cat-back-gain-desktop.svg");
@@ -133,6 +135,7 @@
 
   @media (min-width: @desktop-width) {
     text-align: center;
+    margin-bottom: 73px;
   }
 }
 
