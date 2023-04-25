@@ -14,6 +14,12 @@ navToggle.addEventListener('click', function () {
   }
 });
 
+// Убирает карту-картинку при наличии JS
+let imgMap = document.querySelector('.contacts__map-image');
+
+imgMap.classList.add('contacts__map-image--nojs');
+
+// Добавляет интерактивную карту
   ymaps.ready(init);
   function init() {
     var myMap = new ymaps.Map("map", {
