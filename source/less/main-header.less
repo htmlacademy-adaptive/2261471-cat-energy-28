@@ -23,24 +23,45 @@
 }
 
 .main-header__logo {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: calc(100% - 64px);
-  margin-left: 20px;
   height: 65px;
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  &::after {
+    position: relative;
+    content: "";
+    background-image: url("../img/logo-text.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 102px;
+    height: 18px;
+    margin: 0 auto;
+  }
 
   @media (min-width: @tablet-width) {
     height: 52px;
     width: 174px;
     margin: 0;
     margin-right: auto;
+
+    &::after {
+      display: none;
+    }
   }
 
   @media (min-width: @desktop-width) {
     height: 59px;
     width: 202px;
   }
+}
+
+.main-header__logo-image {
+  margin-right: 20px;
 }
 
 .main-header__logo-text {
