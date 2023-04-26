@@ -34,7 +34,7 @@ imgMap.classList.add('contacts__map-image--nojs');
     }, {
       iconLayout: 'default#image',
       iconImageHref: '../img/map-pin.svg',
-      iconImageSize: [50, 50],
+      iconImageSize: [57, 53],
       iconImageOffset: [-25, -45]
     });
     myMap.behaviors.disable('scrollZoom');
