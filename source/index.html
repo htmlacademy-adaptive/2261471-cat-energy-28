@@ -128,19 +128,29 @@
         <div class="precedent__image slider">
           <div class="slider__before">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet-2x.png 2x" width="560" height="512">
-          <img class="slider__image" src="img/cat-before-mobile.png" width="280" height="256" alt="Кот до голодовки">
+            <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-tablet.webp 1x, img/cat-before-tablet-2x.webp 2x" width="560" height="512">
+            <source type="image/webp" srcset="img/cat-before-mobile.webp 1x, img/cat-before-mobile-2x.webp 2x" width="280" height="256">
+            <source media="(min-width: 768px)" srcset="img/cat-before-tablet.png 1x, img/cat-before-tablet-2x.png 2x" width="560" height="512">
+          <img class="slider__image" src="img/cat-before-mobile.png" rcset="img/cat-before-mobile-2x.png 2x" width="280" height="256" alt="Кот до голодовки">
           </picture>
-          <!-- <button class="slider__toggle" type="button">
-            <span class="visually-hidden">Посмотреть до и после</span>
-          </button> -->
           </div>
           <div class="slider__after">
             <picture>
-              <source media="(min-width: 768px)" srcset="img/slider-tablet.png 1x, img/slider-tablet-2x.png 2x" width="560" height="512">
-            <img class="slider__image" src="/img/cat-after-mobile.png" width="280" height="256" alt="Кот после голодовки">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-after-tablet.webp 1x, img/cat-after-tablet-2x.webp 2x" width="560" height="512">
+              <source type="image/webp" srcset="img/cat-after-mobile.webp 1x, img/cat-after-mobile-2x.webp 2x" width="280" height="256">
+              <source media="(min-width: 768px)" srcset="img/cat-after-tablet.png 1x, img/cat-after-tablet-2x.png 2x" width="560" height="512">
+            <img class="slider__image" src="img/cat-after-mobile.png" srcset="img/cat-after-mobile-2x.png 2x" width="280" height="256" alt="Кот после голодовки">
             </picture>
           </div>
+          <button class="slider__toggle" type="button">
+            <span class="visually-hidden">Посмотреть до и после</span>
+            <svg class="slider__control" width="40" height="256" viewBox="0 0 40 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="109" width="38" height="38" rx="19" fill="white"/>
+              <path d="M16 119L8 128L16 137V119Z" fill="currentcolor"/>
+              <path d="M32 128L24 119V137L32 128Z" fill="currentcolor"/>
+              <rect x="1" y="109" width="38" height="38" rx="19" stroke="currentcolor" stroke-width="2"/>
+              </svg>
+          </button>
         </div>
     </section>
   </main>
