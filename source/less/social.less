@@ -13,9 +13,41 @@
   text-decoration: none;
   color: #444444;
   display: block;
-  // // Пытался добавить здесь маску, чтобы убрать svg из разметки, не заработало
-  // width: 44px;
-  // height: 44px;
-  // mask-image: url("../img/icons/sprite.svg#social-telegram");
-  // background-color: #444444;
+  height: 22px;
+  width: 29px;
+
+  &--vkontakte {
+    mask-image: url("../img/icons/sprite.svg#social-vk");
+    mask-size: 29px 22px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: rgba(102, 102, 102, 1);
+  }
+
+  &--youtube {
+    mask-image: url("../img/icons/sprite.svg#social-youtube");
+    mask-size: 29px 22px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: rgba(102, 102, 102, 1);
+  }
+
+  &--telegram {
+    mask-image: url("../img/icons/sprite.svg#social-telegram");
+    mask-size: 29px 22px;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    background-color: rgba(102, 102, 102, 1);
+  }
 }
+
+
+.social__link:hover,
+.social__link:focus {
+  background-color: @generalcolor;
+}
+
+.social__link:active {
+  background-color: rgba(104, 183, 56, 0.3);
+}
+
