@@ -9,10 +9,26 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:active {
+    opacity: 30%;
+  }
 }
 
 .copyright__text {
   @media (min-width: @tablet-width) {
     margin-right: 27px;
   }
+}
+
+.copyright__icon {
+  width: 27px;
+  height: 34px;
+  mask-image: url("../img/icons/sprite.svg#copyright");
+  background-color: rgba(102, 102, 102, 1);
+}
+
+.copyright__link:hover .copyright__icon,
+.copyright__link:focus .copyright__icon {
+  background-color: @generalcolor;
 }
