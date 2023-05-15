@@ -97,13 +97,26 @@
   background-position: top center;
   box-sizing: border-box;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-2x.jpg");
+  }
+
   @media (min-width: @tablet-width) {
     min-height: 200px;
+    background-image: url("../img/gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet-2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 244px;
     height: 100%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-2x.jpg");
+    }
   }
 }
 

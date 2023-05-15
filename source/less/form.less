@@ -227,6 +227,7 @@
 
   &:hover {
     border: 1px solid rgba(205, 205, 205, 1);
+    appearance: none;
   }
 
   &:focus {
@@ -243,6 +244,18 @@
     line-height: 29px;
     padding: 11px 60px 11px 20px;
   }
+}
+// Не знаю как без префиксов тут отключить стрелочки прибавления числа для всех браузеров
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+input[type="number"],
+input[type="number"]:hover,
+input[type="number"]:focus {
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .form__icon {
