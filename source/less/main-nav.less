@@ -83,19 +83,7 @@
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-    margin-right: -18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: -16px;
-    // width: 770px;
-    // padding-left: 130px;
-  }
-}
-
-.main-nav--opened .main-nav__wrapper {
+.main-nav--opened .main-nav__list {
   position: absolute;
   display: block;
   right: 0;
@@ -115,9 +103,4 @@
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
-}
-
-.main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
 }
