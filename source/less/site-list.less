@@ -7,10 +7,17 @@
 
   @media (min-width: @tablet-width) {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     max-width: 484px;
     margin-left: auto;
     background-color: transparent;
+  }
+
+  @media (min-width: @desktop-width) {
+    max-width: 500px;
+    justify-content: space-between;
+    margin: 0;
   }
 }
 
@@ -60,6 +67,7 @@
   }
 
   @media (min-width: @tablet-width) {
+    font-weight: 400;
     font-size: 18px;
     line-height: 24px;
     margin-top: 18px;
@@ -72,8 +80,8 @@
     font-size: 20px;
     line-height: 29px;
     padding-bottom: 8px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
 
     &--index {
       color: #ffffff;
@@ -94,8 +102,8 @@
   }
 
   @media (min-width: @desktop-width) {
-    left: 16px;
-    right: 16px;
+    left: 10px;
+    right: 10px;
   }
 }
 

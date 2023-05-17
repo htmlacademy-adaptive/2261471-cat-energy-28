@@ -16,6 +16,7 @@
     width: 565px;
     padding: 56px 60px 56px 80px;
     background-color: #ffffff;
+    box-sizing: border-box;
   }
 }
 
@@ -36,12 +37,20 @@
     line-height: 26px;
     max-width: 172px;
   }
+
+  @media (min-width: @desktop-width) {
+    padding-top: 3px;
+  }
 }
 
 .contacts__text-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: @desktop-width) {
+    width: 175px;
+  }
 }
 
 .contacts__text {
@@ -63,6 +72,7 @@
 
   @media (min-width: @desktop-width) {
     text-align: left;
+    width: 175px;
   }
 }
 
