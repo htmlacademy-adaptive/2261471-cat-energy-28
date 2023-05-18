@@ -2,13 +2,19 @@
   padding-top: 26px;
   padding-bottom: 35px;
 
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 76px;
+  }
+
   @media (min-width: @desktop-width) {
     padding-left: 70px;
-    margin-bottom: 85px;
+    padding-bottom: 85px;
   }
 }
 
 .different__title {
+  display: block;
   position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
@@ -27,9 +33,11 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 411px;
-    padding-left: 37px;
+    max-width: 411px;
+    padding-left: 36px;
+    padding-right: 36px;
     margin-bottom: 80px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -50,7 +58,7 @@
 
   @media (min-width: @tablet-width) {
     left: -30px;
-    top: 23px;
+    top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -66,7 +74,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    padding-left: 40px;
+    padding-left: 41px;
   }
 }
 
@@ -137,8 +145,8 @@
 
   @media (min-width: @tablet-width) {
     top: 50%;
-    left: 77px;
-    transform: translateY(-50%);
+    left: 78px;
+    transform: translateY(-54%);
   }
 
   @media (min-width: @desktop-width) {
