@@ -35,7 +35,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -45,6 +45,7 @@
   height: 56px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
     font-size: 30px;
@@ -61,13 +62,13 @@
 
 .expense__description {
   position: absolute;
-  top: 48px;
+  top: 46px;
   left: 18px;
   width: 87px;
   height: 24px;
   margin-right: auto;
   margin-left: auto;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 12px;
   font-weight: 400;
   line-height: 12px;
@@ -77,6 +78,8 @@
 
   @media (min-width: @tablet-width) {
     width: 142px;
+    font-size: 14px;
+    line-height: 14px;
     top: 64px;
     left: 10px;
     background-color: #ffffff;
@@ -107,7 +110,7 @@
 }
 
 .expense__cost {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
@@ -115,6 +118,7 @@
   color: #000000;
   text-transform: uppercase;
   margin: 0;
+  margin-right: 4px;
   padding: 0;
 
   @media (min-width: @tablet-width) {
@@ -133,7 +137,7 @@
 }
 
 .expense__money {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;

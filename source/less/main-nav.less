@@ -1,8 +1,15 @@
 .main-nav {
   position: relative;
 
+  @media (min-width: @tablet-width) {
+    width: 484px;
+  }
+
   @media (min-width: @desktop-width) {
     min-height: 40px;
+    min-width: 610px;
+    box-sizing: border-box;
+    padding-left: 110px;
   }
 }
 
@@ -16,6 +23,8 @@
   border: none;
   display: block;
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 
   &:hover,
   &:active {
@@ -46,6 +55,10 @@
   @media (min-width: @tablet-width) {
     display: flex;
   }
+
+  @media (min-width: @desktop-width) {
+
+  }
 }
 
 .main-nav--opened .main-nav__toggle {
@@ -70,18 +83,7 @@
   }
 }
 
-.main-nav__wrapper {
-  @media (min-width: @tablet-width) {
-    margin-right: -18px;
-  }
-
-  @media (min-width: @desktop-width) {
-    margin-right: -16px;
-    max-width: 590px;
-  }
-}
-
-.main-nav--opened .main-nav__wrapper {
+.main-nav--opened .main-nav__list {
   position: absolute;
   display: block;
   right: 0;
@@ -101,9 +103,4 @@
 .main-nav--nojs .main-nav__wrapper {
   position: static;
   min-height: 0;
-}
-
-.main-nav__list {
-  display: flex;
-  flex-wrap: wrap;
 }

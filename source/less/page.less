@@ -1,9 +1,14 @@
-html {
+.page {
   overflow-x: hidden;
+  height: 100%;
 }
 
 .page__body {
-  font-family: "Oswald", sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  // grid-template-rows: min-content 1fr min-content;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;

@@ -1,23 +1,30 @@
 .different {
-  padding-top: 25px;
+  padding-top: 26px;
+  padding-bottom: 35px;
+
+  @media (min-width: @tablet-width) {
+    padding-top: 0;
+    padding-bottom: 76px;
+  }
 
   @media (min-width: @desktop-width) {
     padding-left: 70px;
-    margin-bottom: 85px;
+    padding-bottom: 85px;
   }
 }
 
 .different__title {
+  display: block;
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
   background-color: #ffffff;
-  max-width: 287px;
+  max-width: 267px;
   margin: 0;
   margin-left: -20px;
-  margin-bottom: 49px;
+  margin-bottom: 36px;
   padding: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -26,9 +33,11 @@
   @media (min-width: @tablet-width) {
     font-size: 36px;
     line-height: 36px;
-    width: 411px;
-    padding-left: 37px;
+    max-width: 411px;
+    padding-left: 36px;
+    padding-right: 36px;
     margin-bottom: 80px;
+    margin-left: 0;
   }
 
   @media (min-width: @desktop-width) {
@@ -49,7 +58,7 @@
 
   @media (min-width: @tablet-width) {
     left: -30px;
-    top: 23px;
+    top: 22px;
   }
 
   @media (min-width: @desktop-width) {
@@ -65,14 +74,14 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;
-    padding-left: 40px;
+    padding-left: 41px;
   }
 }
 
 .different__list {
   display: flex;
   flex-direction: column;
-  margin-bottom: 35px;
+  margin-bottom: 33px;
 
   @media (min-width: @tablet-width) {
     margin-bottom: 69px;
@@ -94,17 +103,29 @@
   background-image: url("../img/gift.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center;
   box-sizing: border-box;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/gift-2x.jpg");
+  }
 
   @media (min-width: @tablet-width) {
     min-height: 200px;
+    background-image: url("../img/gift-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-tablet-2x.jpg");
+    }
   }
 
   @media (min-width: @desktop-width) {
     min-width: 244px;
     height: 100%;
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/gift-2x.jpg");
+    }
   }
 }
 
@@ -124,8 +145,8 @@
 
   @media (min-width: @tablet-width) {
     top: 50%;
-    left: 77px;
-    transform: translateY(-50%);
+    left: 78px;
+    transform: translateY(-54%);
   }
 
   @media (min-width: @desktop-width) {
@@ -155,7 +176,7 @@
   width: 161px;
   min-height: 60px;
   justify-content: center;
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;

@@ -1,16 +1,14 @@
 .bottom {
   display: block;
   background-color: #f2f2f2;
-  padding: 40px 20px;
 
   @media (min-width: @tablet-width) {
     display: flex;
     align-items: center;
-    padding: 55px 30px;
   }
 
   @media (min-width: @desktop-width) {
-    padding: 66px 110px;
+    min-height: 37px;
   }
 }
 
@@ -28,12 +26,23 @@
 }
 
 .bottom__logo {
-  margin-bottom: 20px;
+  padding: 0;
   display: block;
-  text-align: center;
+  margin: 0 auto 18px;
+  width: 128px;
+  height: 24px;
+  mask-image: url("../img/icons/sprite.svg#logo");
+  background-color: rgba(17, 17, 17, 1);
+  mask-size: 128px 24px;
+  mask-repeat: no-repeat;
+  mask-position: center;
 
   @media (min-width: @tablet-width) {
+    width: 142px;
+    height: 26px;
+    mask-size: 142px 26px;
     margin: 0;
+    margin-right: 26px;
   }
 }
 
