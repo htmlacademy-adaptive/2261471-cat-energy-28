@@ -63,9 +63,12 @@
 .expense__description {
   position: absolute;
   top: 46px;
-  left: 18px;
-  width: 87px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
   height: 24px;
+  padding-right: 14px;
+  padding-left: 14px;
   margin-right: auto;
   margin-left: auto;
   font-family: "Lato", "Arial", sans-serif;
@@ -77,16 +80,13 @@
   background-color: #eaeaea;
 
   @media (min-width: @tablet-width) {
-    width: 142px;
+    width: 126px;
     font-size: 14px;
     line-height: 14px;
     top: 64px;
-    left: 10px;
+    padding-right: 10px;
+    padding-left: 8px;
     background-color: #ffffff;
-
-    br {
-      display: none;
-    }
   }
 
   @media (min-width: @desktop-width) {
