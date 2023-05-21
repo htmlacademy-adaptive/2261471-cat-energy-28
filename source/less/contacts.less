@@ -1,5 +1,10 @@
 .contacts {
   display: flex;
+  flex-direction: column;
+}
+
+.contacts__container {
+  display: flex;
   justify-content: space-between;
   padding: 26px 20px;
   background-color: #ffffff;
@@ -13,10 +18,14 @@
   }
 
   @media (min-width: @desktop-width) {
+    position: absolute;
     width: 565px;
     padding: 59px 60px 56px 80px;
     background-color: #ffffff;
     box-sizing: border-box;
+    top: 95px;
+    left: 110px;
+    z-index: 2;
   }
 }
 
