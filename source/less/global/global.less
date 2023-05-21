@@ -1,9 +1,22 @@
-p {
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+img {
+  display: block;
+  object-fit: contain;
+  margin: 0;
+  padding: 0;
+}
+
+.phrase {
   padding: 0;
   margin: 0;
 }
 
-section {
+.section {
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
@@ -17,42 +30,4 @@ section {
     padding-left: 110px;
     padding-right: 110px;
   }
-}
-
-ul {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-h1 {
-  position: relative;
-  font-family: "Oswald", "Arial", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 36px;
-  line-height: 36px;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-
-  @media (min-width: @tablet-width) {
-    font-size: 60px;
-    line-height: 60px;
-    color: #000000;
-    text-align: start;
-  }
-}
-
-fieldset {
-  border: none;
-  padding: 0;
-  margin: 0;
-}
-
-img {
-  display: block;
-  object-fit: contain;
-  margin: 0;
-  padding: 0;
 }
