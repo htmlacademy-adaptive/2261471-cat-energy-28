@@ -24,12 +24,12 @@
   @media (min-width: @tablet-width) {
     display: flex;
     flex-direction: column;
-    padding-top: 161px;
+    margin-top: 161px;
     margin-bottom: 33px;
   }
 
-  @media (min-width: @tablet-width) {
-    padding-top: 162px;
+  @media (min-width: @desktop-width) {
+    margin-top: 162px;
   }
 }
 
@@ -56,13 +56,13 @@
 
   @media (min-width: @tablet-width) {
     position: absolute;
-    bottom: 191px;
+    top: -34px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-100%);
   }
 
   @media (min-width: @desktop-width) {
-    bottom: 198px;
+    top: -44px;
   }
 }
 

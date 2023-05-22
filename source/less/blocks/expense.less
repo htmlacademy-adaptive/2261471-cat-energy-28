@@ -42,7 +42,8 @@
   text-align: center;
   color: #000000;
   width: 124px;
-  height: 56px;
+  min-height: 56px;
+  padding: 14px 20px 17px;
   border: 1px solid #cdcdcd;
   border-radius: 3px;
   box-sizing: border-box;
@@ -62,13 +63,14 @@
 
 .expense__description {
   position: absolute;
-  top: 46px;
+  bottom: -15px;
   left: 50%;
   transform: translateX(-50%);
-  width: 60px;
+  width: 84px;
   height: 24px;
-  padding-right: 14px;
-  padding-left: 14px;
+  overflow-y: hidden;
+  padding-right: 8px;
+  padding-left: 8px;
   margin-right: auto;
   margin-left: auto;
   font-family: "Lato", "Arial", sans-serif;
@@ -78,14 +80,15 @@
   text-align: center;
   color: #444444;
   background-color: #eaeaea;
+  box-sizing: border-box;
 
   @media (min-width: @tablet-width) {
-    width: 126px;
+    bottom: -10px;
+    width: 144px;
     font-size: 14px;
     line-height: 14px;
-    top: 64px;
-    padding-right: 10px;
-    padding-left: 8px;
+    padding: 5px 10px 8px 8px;
+    max-height: 27px;
     background-color: #ffffff;
   }
 
@@ -97,7 +100,8 @@
 .expense__cost-wrapper {
   display: flex;
   justify-content: center;
-  margin-bottom: 20px;
+  max-width: 190px;
+  margin: 0 auto 20px auto;
 
   @media (min-width: @tablet-width) {
     flex-direction: column;
@@ -106,6 +110,7 @@
 
   @media (min-width: @desktop-width) {
     flex-direction: row;
+    max-width: 366px;
   }
 }
 
@@ -123,7 +128,7 @@
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
-    width: 174px;
+    min-width: 174px;
     text-align: end;
     margin: 0;
     margin-bottom: 9px;
