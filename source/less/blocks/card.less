@@ -110,6 +110,23 @@
   }
 }
 
+.card__link-title {
+  display: block;
+  width: 76px;
+  margin-bottom: 14px;
+
+  @media (min-width: @tablet-width) {
+    width: 170px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 13px;
+  }
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 18px;
+  }
+}
+
 .card__title {
   grid-column: 2 / 3;
   font-family: "Oswald", "Arial", sans-serif;
@@ -120,7 +137,7 @@
   width: 76px;
   color: #222222;
   text-transform: uppercase;
-  margin-bottom: 14px;
+  text-decoration: none;
 
   @media (min-width: @tablet-width) {
     font-size: 20px;
